@@ -16,9 +16,9 @@ int main() {
   A = B + C;
   cout << "A=B+C,A=" << A << endl;              //Output for sum of A, B and C
 
-  Complex M = B - C;                            ///< Creating new complex value M
+  Complex M = B - C;                            ///<Creating new complex value M
   cout << "M = B - C, M = " << M << endl;       // Output for difference between B and C
-  cout << "M*A=" << M * A << endl;              //<Output for multiply of M and A
+  cout << "M*A=" << M * A << endl;              // Output for multiply of M and A
   cout << "M/4.45=" << M / 4.45 << endl;        ///<Output for division of M by 4.45
 
     ///@param D - Complex value entered by user

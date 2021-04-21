@@ -28,10 +28,11 @@ class Complex {
   /**@return Return abs of complex value
    */
   double abs();
-  /**Friend operators for input and output value from stream
-   */
+  /**@brief Friend Operator for inserting complex value in stream
+    */
   friend istream & operator >> (istream & , Complex & );
-
+  /**@brief Friend Operator for getting complex value from stream
+    */
   friend ostream & operator << (ostream & , Complex & );
   /**@brief Operator sums one complex value with other
    */
@@ -49,7 +50,7 @@ class Complex {
   /**@brief Operator substracts real value from complex value
    */
   Complex operator - (const double & );
-  /**@brief Operator substracts one complex value from other
+  /**@brief Friend Operator substracts one complex value from other
    */
   friend Complex operator - (const double & ,
     const Complex & );
@@ -66,8 +67,7 @@ class Complex {
   /**@brief Operator divides one complex value by real value
    */
   Complex operator / (const double & );
-  /** Some additional operators
-   */
+  // Some additional operators
   Complex & operator += (const Complex & );
   Complex & operator -= (const Complex & );
   Complex & operator *= (const Complex & );

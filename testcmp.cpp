@@ -1,6 +1,5 @@
 #include <iostream>
 #include "mycomplex.h"
-
 using namespace std;
 
 /** @brief Main function for Testing complex numbers

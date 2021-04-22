@@ -25,9 +25,9 @@ Complex::~Complex() {
 
 /**@brief Initialize field of complex class
 */
-void Complex::Set(double aRe, double aIm) {
-  Re = aRe;
-  Im = aIm;
+void Complex::Set(double a_Re, double a_Im) {
+  Re = a_Re;
+  Im = a_Im;
 }
 
 Complex::operator double() {

@@ -147,20 +147,20 @@ Complex & Complex::operator = (const double & aRval) {
 /**
 *@return stream
 */
-istream & operator >> (istream & stream, Complex & a) {
+istream & operator >> (istream & stream, Complex & aRval) {
   char tmp[256];
-  stream >> a.Re >> a.Im >> tmp;
+  stream >> aRval.Re >> aRval.Im >> tmp;
   return stream;
 }
 
 /**
 *@return stream
 */
-ostream & operator << (ostream & stream, Complex & a)
+ostream & operator << (ostream & stream, Complex & aRval)
 {
-  stream << a.Re;
-  if (!(a.Im < 0)) stream << '+';
-  stream << a.Im << 'i';
+  stream << aRval.Re;
+  if (!(aRval.Im < 0)) stream << '+';
+  stream << aRval.Im << 'i';
   return stream;
 }
 
